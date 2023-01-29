@@ -1,0 +1,14 @@
+# syntax=docker/dockerfile:experimental
+FROM mcr.microsoft.com/dotnet/sdk:7.0
+WORKDIR /src
+EXPOSE 80
+ARG BUILD_CONFIGURATION=Debug
+ENV ASPNETCORE_ENVIRONMENT=Development
+ENV ASPNETCORE_URLS=http://+:80
+
+COPY Identity.API/Identity.API.csproj .
+RUN dotnet restore
+COPY Identity.API .
+RUN dotnet build -c $BUILD_CONFIGURATION --no-restore
+
+ENTRYPOINT [ "dotnet", "run", "-c", "$BUILD_CONFIGURATION", "--no-build" ]

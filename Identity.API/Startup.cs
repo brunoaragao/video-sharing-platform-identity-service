@@ -1,6 +1,6 @@
-using AluraChallenge.VideoSharingPlatform.Services.Identity.API.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using AluraChallenge.VideoSharingPlatform.Services.Identity.API.Data;
 
 namespace AluraChallenge.VideoSharingPlatform.Services.Identity.API;
 
@@ -19,8 +19,6 @@ public class Startup
 
         services.AddDbContext<ApplicationContext>(options =>
         {
-            //TODO: Use this line to use the connection string from appsettings.json
-            // options.UseNpgsql("Name=IdentityConnection");
             options.UseNpgsql(Configuration.GetConnectionString("IdentityConnection"));
         });
 

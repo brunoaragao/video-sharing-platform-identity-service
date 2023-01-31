@@ -2,7 +2,7 @@
 
 This service is responsible for authenticating users. It exposes a REST API that can be used to authenticate users and generate JWT tokens. The service also provides a Swagger UI that can be used to test the API.
 
-Created as part of the [Alura Challenge](https://www.alura.com.br/challenge-back-end) 2021. :rocket:
+Created as part of the [Alura Challenge](https://www.alura.com.br/challenges/back-end) 2021. :rocket:
 
 ## Getting Started
 
@@ -36,12 +36,12 @@ The service has a set of unit tests that can be run using the `dotnet test` comm
 
 ## Built With
 
-- [.NET 7](https://dotnet.microsoft.com/download/dotnet/7.0) - The web framework used
+- [Docker](https://www.docker.com/) - Containerization
+- [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet) - Web framework
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/) - ORM
 - [JWT](https://jwt.io/) - Authentication
 - [Swagger](https://swagger.io/) - API documentation
 - [xUnit](https://xunit.net/) - Unit testing framework
-- [Docker](https://www.docker.com/) - Containerization
 
 ## Acknowledgments
 

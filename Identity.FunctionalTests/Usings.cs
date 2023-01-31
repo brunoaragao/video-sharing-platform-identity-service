@@ -1,4 +1,5 @@
 global using System.Net.Http.Json;
+global using static System.Net.HttpStatusCode;
 
 global using Microsoft.AspNetCore.Hosting;
 global using Microsoft.AspNetCore.Identity;
@@ -14,5 +15,3 @@ global using AluraChallenge.VideoSharingPlatform.Services.Identity.FunctionalTes
 global using AluraChallenge.VideoSharingPlatform.Services.Identity.FunctionalTests.Fixtures;
 
 global using Xunit;
-
-global using static System.Net.HttpStatusCode;
